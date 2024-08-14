@@ -1,12 +1,15 @@
-def triangulo(b,h):
-    return (b*h)/2
+import math
 
 
-poligono = input("Qual o poligono que você deseja a área? ")
+def area_triangulo(base, altura):
+    return (base * altura) / 2
+def area_quadrado(lado):
+    return lado ** 2
+def area_retangulo(base, altura):
+    return base * altura
+def area_circulo(raio):
+    return math.pi * raio ** 2
 
-if poligono == 'triangulo':
-    b = int(input('Qual a base desse triângulo? '))
-    a = int(input('Qual a altura desse triângulo? '))
-    print(triangulo(b,a))
-else:
-    print('Nome errado')
+
+
+
