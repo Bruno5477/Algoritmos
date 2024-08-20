@@ -16,7 +16,7 @@ def buscar_cliente(email):
     for cliente in clientes:
         if cliente[1] == email:
             print(f"Cliente encontrado: Nome: {cliente[0]}, E-mail: {cliente[1]}, Telefone: {cliente[2]}, Endereço: {cliente[3]}\n")      
-            return
+            return #usando o return aqui para encerrar a função
     print(f"Não temos um Cliente registrado com esse o e-mail: {email}.\n")
 
 #Criando a função que remove o cliente pelo email do mesmo
@@ -25,7 +25,7 @@ def remover_cliente(email):
         if cliente[1] == email:
             clientes.remove(cliente)
             print(f"O Cliente com o e-mail {email} foi removido da lista de clientes.\n")
-            return       
+            return #usando o return aqui para encerrar a função      
     print(f"O Cliente com o {email} não foi encontrado.\n")
 
 
