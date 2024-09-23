@@ -22,3 +22,4 @@ def verificar_estoque(produto:str):
 
 verificar_estoque("Teclado")
 verificar_estoque("Cooler")
+
