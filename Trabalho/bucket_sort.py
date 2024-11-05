@@ -1,27 +1,43 @@
+"""
+Bucket Sort:
+É um algoritmo de ordenação
+
+Vantagens:
+
+
+Desvantagens:
+
+
+Passo a passo:
+
+
+"""
 from insertion_sort import insertion_sort
 
-def bucket_sort(arr):
-    # Define o número de buckets
-    n = len(arr)
+def bucket_sort(lista):
+    # Definindo o número de buckets(baldes)
+    n = len(lista)
     buckets = [[] for _ in range(n)]
 
-    # Distribui os elementos entre os buckets
-    for num in arr:
-        index = int(num * n)  # Mapeia o valor ao índice do bucket
+    # Distribuindo os elementos entre os buckets
+    for num in lista:
+        # valor do índice do bucket
+        index = int(num * n)  
         buckets[index].append(num)
 
-    # Ordena cada bucket individualmente
+    # Ordenando cada bucket individualmente usando o insertion sort
     for bucket in buckets:
-        insertion_sort(bucket)  # Aqui usamos sort(), mas outros algoritmos podem ser usados
+        insertion_sort(bucket) 
 
-    # Concatena todos os buckets em uma lista ordenada
-    sorted_arr = []
+    # Concatenando todos os buckets em uma lista ordenada
+    
+    lista_ordenada = []
     for bucket in buckets:
-        sorted_arr.extend(bucket)
+        lista_ordenada.extend(bucket)
 
-    return sorted_arr
+    return lista_ordenada
 
 # Exemplo de uso
-unsorted_list = [0.78, 0.17, 0.39, 0.26, 0.72, 0.94, 0.21, 0.12, 0.23, 0.68]
-sorted_list = bucket_sort(unsorted_list)
-print("Array ordenado:", sorted_list)
+lista = [0.78, 0.17, 0.39, 0.26, 0.72, 0.94, 0.21, 0.12, 0.23, 0.68]
+lista_ordenada = bucket_sort(lista)
+print(f"\nLista não ordenada: {lista} \nLista ordenado: {lista_ordenada}\n")a
