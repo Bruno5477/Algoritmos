@@ -47,6 +47,7 @@ def counting_sort(lista):
     return lista
 
 # Exemplo
-lista = [4, 2, 2, 6, 3, 3, 1, 6, 5, 2, 3]
+lista = [10, 25, 72, 11, 8, 9, 14, 12, 31, 16]
+
 lista_ordenada = counting_sort(lista)
-print("Lista ordenada:", lista_ordenada)
+print(f"\nLista ordenada: {lista_ordenada}\n")

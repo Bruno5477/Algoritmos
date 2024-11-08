@@ -45,6 +45,6 @@ def radix_sort(lista, base:int = 10):
     return lista
 
 
-lista = [170, 45, 75, 90, 802, 24, 2, 66]
+lista = [10, 25, 72, 11, 8, 9, 14, 12, 31, 16]
 lista_ordenada = radix_sort(lista)
-print(f'\nLista ordenada: {lista_ordenada}\n')
+print(f"\nLista não ordenada: {lista} \nLista ordenado: {lista_ordenada}\n")

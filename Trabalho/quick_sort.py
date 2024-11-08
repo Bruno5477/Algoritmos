@@ -25,7 +25,7 @@ Passo a passo:
 
 """
 
-def quicksort(arr):
+def quick_sort(arr):
     # Caso base da recursão, se a lista tiver 0 ou 1 elemento, ela já está ordenada.
     if len(arr) <= 1:
         return arr
@@ -35,16 +35,18 @@ def quicksort(arr):
         pivo = arr[-1]
 
         # Elementos menores ou iguais ao pivô
-        esquerda = [x for x in arr[:-1] if x <= pivo]  
+        esquerda = [x for x in arr[:-1] if x < pivo]  
         
         # Elementos maiores que o pivô
         direita = [x for x in arr[:-1] if x > pivo]  
         
+        # Elementos Iguais ao pivô
+        iguais = [x for x in lista if x == pivo]
 
         # Aplicando a função recursivamente e combinando os resultados
-        return quicksort(esquerda) + pivo + quicksort(direita)
+        return quick_sort(esquerda) + iguais + quick_sort(direita)
 
 # Exemplo 
-lista = [10, 5, 7, 1, 8, 9, 4, 2, 3, 6]
-lista_ordenada = quicksort(lista)
-print("Lista ordenada:", lista_ordenada)
+lista = [10, 25, 72, 11, 8, 9, 14, 12, 31, 16]
+lista_ordenada = quick_sort(lista)
+print(f"\nLista não ordenada: {lista} \nLista ordenado: {lista_ordenada}\n")

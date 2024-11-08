@@ -62,6 +62,6 @@ def merge(esquerda, direita):
     return lista_ordenada
 
 # Exemplo 
-lista = [10, 5, 7, 1, 8, 9, 4, 2, 3, 6]
+lista = [10, 25, 72, 11, 8, 9, 14, 12, 31, 16]
 lista_ordenada = merge_sort(lista)
-print("Lista ordenada:", lista_ordenada)
+print(f"\nLista não ordenada: {lista} \nLista ordenado: {lista_ordenada}\n")

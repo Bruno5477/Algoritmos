@@ -1,15 +1,23 @@
 """
 Bucket Sort:
-É um algoritmo de ordenação
+É um algoritmo de ordenação que divide os elementos em Buckets (baldes) e depois ordena cada 
+bucket individualmente usando algum outro sort mais simples.
 
 Vantagens:
-
+    Eficiente para intervalos limitados e dados contínuos;
+    Estável, não alterando a ordem de dados iguais;
+    Processamento simples.
 
 Desvantagens:
-
+    Sensível a distribuição dos dados;
+    Necessita de espaço adicional para os buckets;
+    Desempenho e eficiência depende do número de buckets.
 
 Passo a passo:
-
+    Inicializa uma lista de buckets (baldes), inicialmente vazios.
+    Inclui cada elemento da lista original em um balde.
+    Ordena todos os baldes.
+    Concatena (junta) os baldes ordenados em uma lista ordenada.
 
 """
 from insertion_sort import insertion_sort
