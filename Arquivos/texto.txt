@@ -1,0 +1,2 @@
+Python é uma excelente linguagem de programação, Javascript é tão bom quanto python e Java é
+melhor que Javascript e python
