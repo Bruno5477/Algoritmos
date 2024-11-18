@@ -7,6 +7,7 @@ def carregar_dados(arquivo):
             for linha in f:
                 nome, media = linha.strip().split(', ')
                 alunos.append({'nome': nome, 'media': float(media)})
+    
     except FileNotFoundError:
         pass  
     return alunos
@@ -16,6 +17,7 @@ def salvar_dados(arquivo, alunos):
         with open(arquivo, 'w') as f:
             for aluno in alunos:
                 f.write(f"{aluno['nome']}, {aluno['media']:.2f}\n")
+    
     except (IOError, OSError) as e:
         print(f"Erro ao salvar os dados no arquivo: {e}")
 
@@ -33,6 +35,7 @@ def solicitar_dados_aluno():
                     notas.append(nota_float)
                 else:
                     raise ValueError("Nota inválida. Deve ser entre 0 e 10.")
+            
             except ValueError as ve:
                 print(f"Erro: {ve}. Tente novamente.")
                 notas = []  
@@ -53,6 +56,7 @@ def adicionar_aluno(alunos):
 def ordenar_alunos(alunos):
     alunos.sort(key=lambda aluno: aluno['media'], reverse=True)
     print("Alunos ordenados por média:")
+    
     for aluno in alunos:
         print(f"{aluno['nome']} - Média: {aluno['media']:.2f}")
 
