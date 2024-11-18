@@ -1,0 +1,4 @@
+frase 1 do exemplo
+frase 2 do exemplo
+frase 3 do exemplo
+frase 4 do exemplo

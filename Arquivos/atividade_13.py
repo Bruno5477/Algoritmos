@@ -3,7 +3,6 @@ from datetime import datetime
 
 def backup_arquivo(origem, destino):
     try:
-        # Copiar o conteúdo do arquivo de origem para o destino
         shutil.copyfile(origem, destino)
         
         with open(destino, "a", encoding="UTF-8") as backup:
