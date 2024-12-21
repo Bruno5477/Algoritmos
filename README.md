@@ -27,7 +27,8 @@ Scripts em Python, criados durante a disciplina de Algoritmo no curso de Engenha
    * [Fibonacci](https://github.com/Bruno5477/Algoritmos/blob/main/recursivo/fibonacci_recursiva.py)
    * [Palimdromo](https://github.com/Bruno5477/Algoritmos/blob/main/recursivo/palindromo_recursivo.py)
    * [Potência](https://github.com/Bruno5477/Algoritmos/blob/main/recursivo/potencia_recursiva.py)
-
+     
+* [Algoritmos de Busca](https://github.com/Bruno5477/Algoritmos/tree/main/algoritmo_busca)
 * [Atividades com Arquivos](https://github.com/Bruno5477/Algoritmos/tree/main/Arquivos)
 * [Atividades com exceptions](https://github.com/Bruno5477/Algoritmos/tree/main/exceptions)
 * [P1](https://github.com/Bruno5477/Algoritmos/tree/main/revisao_p1)
